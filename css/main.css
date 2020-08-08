@@ -154,17 +154,17 @@ nav {
   color: white;
 }
 
-.album-photo img{
+.album-photo img {
   height: 150px;
 }
 
-#album-text-1{
+#album-text-1 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
 
-#album-text-2{
+#album-text-2 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -174,4 +174,47 @@ nav {
   position: absolute;
   height: 250px;
   right: -120px;
+}
+
+main {
+  display: flexbox;
+  flex-direction: column;
+}
+
+.main-cont {
+  display: flex;
+}
+
+#songs-info {
+  flex-direction: row;
+}
+#new-albums {
+  flex: 1;
+}
+#top-songs {
+  flex-direction: column;
+  flex: 1;
+}
+
+#top-songs-header {
+  width: 90%;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px !important;
+}
+
+#top-songs-header h2 {
+  font-size: 2rem;
+  flex: 1;
+}
+
+#sub-cont h3 {
+  color: #A4A4A4;
+}
+
+#sub-cont {
+  flex: 2;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
