@@ -16,15 +16,17 @@ button {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   background: url(../img/header-bg.jpg) no-repeat center;
   background-size: cover;
-  height: 40vh;
+  height: 50vh;
 }
 
 .header-top {
   display: flex;
   width: 95%;
-  margin: auto;
+  margin: 0 auto 0 auto !important;
   height: 10vh;
   align-items: center;
   margin-bottom: 50px;
@@ -93,8 +95,9 @@ nav {
 
 .header-bottom {
   display: flex;
+  flex: 2;
   width: 95%;
-  margin: auto;
+  margin: 0 auto 0 auto;
   height: 10vh;
   align-items: center;
 }
@@ -107,11 +110,6 @@ nav {
   flex: 2;
   flex-direction: column;
   justify-content: space-between;
-}
-
-#displayer-cont {
-  flex: 1;
-  background: blue;
 }
 
 #figures-cont {
@@ -136,10 +134,44 @@ nav {
 }
 
 #player-functions-cont {
+  margin-bottom: 30px;
 }
 
 #player-text-cont {
   flex-direction: column;
   color: white;
   justify-content: center;
+}
+
+#displayer-cont {
+  display: flexbox;
+  flex-direction: column;
+  flex: 1;
+}
+
+.album-display {
+  justify-content: center;
+  color: white;
+}
+
+.album-photo img{
+  height: 150px;
+}
+
+#album-text-1{
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#album-text-2{
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#gradiente {
+  position: absolute;
+  height: 250px;
+  right: -120px;
 }
