@@ -251,3 +251,34 @@ main {
   font-weight: 800;
   font-size: 1.7rem;
 }
+
+#new-albums {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#new-albums h2{
+  font-size: 2rem;
+}
+
+.album-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0 20px 0;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-card p{
+  text-align: center;
+}
+
