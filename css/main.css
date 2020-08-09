@@ -193,6 +193,7 @@ main {
 }
 #top-songs {
   flex-direction: column;
+  justify-content: space-evenly;
   flex: 1;
 }
 
@@ -200,7 +201,11 @@ main {
   width: 90%;
   flex-direction: row;
   align-items: center;
-  margin-top: 30px !important;
+  margin: 30px 0 0 30px !important;
+}
+
+#top-songs-table {
+  margin: 50px 0 0 30px;
 }
 
 #top-songs-header h2 {
@@ -217,4 +222,32 @@ main {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #A4A4A4;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+}
+
+#table-header {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #e6e4e4;
+  border-bottom: 2px solid #A4A4A4;
+}
+
+.rank {
+  font-weight: 800;
+  font-size: 1.7rem;
 }
