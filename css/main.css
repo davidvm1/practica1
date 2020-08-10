@@ -187,6 +187,7 @@ main {
 
 #songs-info {
   flex-direction: row;
+  border-bottom: 1px solid #a4a4a4;
 }
 #new-albums {
   flex: 1;
@@ -205,7 +206,7 @@ main {
 }
 
 #top-songs-table {
-  margin: 50px 0 0 30px;
+  margin: 50px 0 50px 30px;
 }
 
 #top-songs-header h2 {
@@ -214,7 +215,7 @@ main {
 }
 
 #sub-cont h3 {
-  color: #A4A4A4;
+  color: #a4a4a4;
 }
 
 #sub-cont {
@@ -227,7 +228,7 @@ main {
 .row {
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 1px solid #A4A4A4;
+  border-bottom: 1px solid #a4a4a4;
   align-items: center;
   padding: 10px 0 10px 0;
 }
@@ -244,7 +245,8 @@ main {
   font-size: 1.3rem;
   font-weight: 400;
   color: #e6e4e4;
-  border-bottom: 2px solid #A4A4A4;
+  border-bottom: 2px solid #a4a4a4;
+  margin-bottom: 30px;
 }
 
 .rank {
@@ -260,11 +262,11 @@ main {
   align-items: center;
 }
 
-#new-albums h2{
+#new-albums h2 {
   font-size: 2rem;
 }
 
-.album-row{
+.album-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -278,7 +280,117 @@ main {
   align-items: center;
 }
 
-.album-card p{
+.album-card p {
   text-align: center;
 }
 
+#songs-events {
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+#table-container {
+  margin: 50px 0 50px 0;
+  display: flex;
+  width: 80%;
+}
+
+#dates-table {
+  display: flex;
+  flex-direction: column;
+  background: #f1f1f1;
+  box-shadow: 3px 3px 0.5px #cccccc;
+}
+
+#date-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dates-column {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 30px 0 30px;
+  width: 200px;
+}
+
+.dates-column p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.arrow-resize {
+  height: auto;
+  width: 20px;
+}
+
+.rotate-img {
+  transform: rotate(90deg);
+}
+
+#floating-banner {
+  right: 230px;
+  bottom: -720px;
+  width: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: white;
+  z-index: 1;
+  border-radius: 50px;
+  box-shadow: 3px 3px 0.5px #cccccc;
+}
+
+.date-event {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 30px 0 30px 0;
+  border-bottom: 1px solid #a4a4a4;
+}
+
+.inner-cont {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 20px 10px 20px;
+}
+
+.inner-cont .day {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.inner-cont .date span {
+  color: #a4a4a4;
+}
+
+#date-text-cont {
+  border: none !important;
+  font-weight: 600;
+}
+
+.comprar-btn {
+  height: 35px;
+  width: 125px;
+  border: 2px solid white;
+  background-color: #00CFA5;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+}
+
+#selected {
+  background: white;
+  border-radius: 15px;
+  border: 1px solid #cccccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
